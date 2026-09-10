@@ -144,23 +144,23 @@
 
             <div class="divider"></div>
 
-            <!-- Azure SVG Logo Link -->
+            <!-- Azure Logo Image -->
             <img class="logo-azure" src="https://icon.icepanel.io/Technology/svg/Azure.svg" alt="Azure Logo">
         </div>
 
-        <h1>CI/CD Deployment Test</h1>
+        <h1>PHP CI/CD Deployment Test</h1>
         <div class="status-badge">✓ Deployment Successful</div>
 
-        <p>If you can see this page, your Azure App Service pipeline (GitHub Actions or Azure DevOps) successfully built and deployed the artifact.</p>
+        <p>If you can see this page, your Azure App Service pipeline (GitHub Actions or Azure DevOps) successfully deployed the PHP application.</p>
 
         <div class="info-card">
-            <div><span class="info-label">Environment:</span> Production</div>
-            <div><span class="info-label">Build Version:</span> <span id="build-version">v2.0.0</span></div>
-            <div><span class="info-label">Deployment Time:</span> <span id="deploy-time">Loading...</span></div>
+            <div><span class="info-label">Environment:</span> Production-3</div>
+            <div><span class="info-label">PHP Version:</span> <?php echo phpversion(); ?></div>
+            <div><span class="info-label">Server Time (UTC):</span> <?php echo gmdate('Y-m-d H:i:s T'); ?></div>
         </div>
 
         <div class="timestamp">
-            Page loaded locally at: <span id="local-time"></span>
+            Client Local Time: <span id="local-time"></span>
         </div>
 
         <!-- Footer Tag -->
@@ -170,8 +170,6 @@
     </div>
 
     <script>
-        // Populate client-side dynamic timestamps
-        document.getElementById('deploy-time').textContent = new Date().toISOString();
         document.getElementById('local-time').textContent = new Date().toLocaleString();
     </script>
 </body>

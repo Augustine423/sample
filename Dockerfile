@@ -1,3 +1,3 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+FROM php:8.3-apache
+COPY index.php /var/www/html/index.php
 EXPOSE 80
