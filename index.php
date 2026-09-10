@@ -154,7 +154,7 @@
         <p>If you can see this page, your Azure App Service pipeline (GitHub Actions or Azure DevOps) successfully deployed the PHP application.</p>
 
         <div class="info-card">
-            <div><span class="info-label">Environment:</span> Production</div>
+            <div><span class="info-label">Environment:</span> Production-2</div>
             <div><span class="info-label">PHP Version:</span> <?php echo phpversion(); ?></div>
             <div><span class="info-label">Server Time (UTC):</span> <?php echo gmdate('Y-m-d H:i:s T'); ?></div>
         </div>
